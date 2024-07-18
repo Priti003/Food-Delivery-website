@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#" title="Logo">
+                    <img src="C:\Users\91800\Downloads\tastetrekker-high-resolution-logo.jpeg" alt="Restaurant Logo" class="img-responsive">
+                </a>
+            </div>
+
+            <div class="menu text-right">
+                <ul>
+                    <li>
+                        <a href="home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="order.html">Order</a>
+                    </li>
+                    <li>
+                        <a href="account.html">Account</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+    <section class="food-search">
+        <div class="container">
+            <h2 class="text-center text-white">Fill this form to confirm your order.</h2>
+
+            <form action="#" class="order">
+                <fieldset>
+                    <legend>Selected Food</legend>
+
+                    <div class="food-menu-img">
+                        <img src="C:\Users\91800\Downloads\menu-pizza.jpg" alt="Chicke Hawain Pizza" class="img-responsive img-curve">
+                    </div>
+    
+                    <div class="food-menu-desc">
+                        <h3>Pizza Paradise</h3>
+                        <p class="food-price">Rs 500</p>
+
+                        <div class="order-label">Quantity</div>
+                        <input type="number" name="qty" class="input-responsive" value="1" required>
+                        
+                    </div>
+
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Delivery Details</legend>
+                    <div class="order-label">Full Name</div>
+                    <input type="text" name="full-name" placeholder="E.g. ABC" class="input-responsive" required>
+
+                    <div class="order-label">Phone Number</div>
+                    <input type="tel" name="contact" placeholder="E.g. 9876xxxxxx" class="input-responsive" required>
+
+                    <!--<div class="order-label">Email</div>
+                    <input type="email" name="email" placeholder="E.g. abc@gmail.com" class="input-responsive" required>
+                    -->
+                    <div class="order-label">Address</div>
+                    <textarea name="address" rows="2" placeholder="E.g. Street, City, Country" class="input-responsive" required></textarea>
+
+                    <a href="#" class="btn btn-primary" onclick="confirmOrder()">Order Now</a>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+    <script>
+        function confirmOrder() {
+    // Use window.confirm to show a confirmation dialog
+    var isConfirmed = window.confirm("Are you sure you want to confirm this order?");
+    
+    // Check if the user clicked OK in the confirmation dialog
+    if (isConfirmed) {
+        // If confirmed, show an alert indicating the order has been confirmed
+        alert("Order confirmed!");
+    } else {
+        // If not confirmed, do nothing
+        // You can add additional actions here if needed
+    }
+}
+    </script>
+
+</body>
+</html>
