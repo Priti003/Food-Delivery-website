@@ -1,2 +1,2 @@
 # Food-Delivery-website
-Html,css ,javascript and php used
+Html,css ,javascript is used  where a user can place order in website and get home delivery
